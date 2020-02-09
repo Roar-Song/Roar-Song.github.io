@@ -1,0 +1,38 @@
+@charset "UTF-8";
+.menu-project .menu_item {
+	font-size: 0.9em;
+    margin: 2em 0 2em 1.5em;
+}
+
+.menu-project .menu_item {
+    color: #515152;
+    --menu-item-color: #d42c2c;
+}
+
+.menu-project .menu_item-name {
+	font-family: 'Noto Sans KR', sans-serif;
+	font-weight: 300;
+	padding: 0.25em;
+	color: #fff;
+}
+
+.menu-project .menu_item-name::before {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 40%;
+	background: var(--menu-item-color);
+	transform: scale3d(1,0,1);
+	transform-origin: 50% 100%;
+	transition: transform 0.3s;
+	transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+}
+
+.menu-project .menu_item:hover .menu_item-name::before,
+.menu-project .menu_item:focus .menu_item-name::before {
+	transform: scale3d(1,1,1);
+	transform-origin: 50% 0%;
+}
