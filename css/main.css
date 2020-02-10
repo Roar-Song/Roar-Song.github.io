@@ -12,6 +12,7 @@ html {
 body {
     font-family: 'Noto Sans', 'Noto Sans KR', sans-serif;
     min-height: 100vh;
+    margin: 0;
     color: #ffffff;
     color: var(--color-text);
     background-color: #121212;
@@ -32,11 +33,13 @@ body {
 .content {
 	position: relative;
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	justify-content: flex-start;
+	align-items: flex-start;
 	min-height: 100vh;
 	margin: 0 auto;
-	padding: 3em 2em;
+    padding: 2em 3em;
+    -webkit-flex-direction:column;
+    flex-direction:column;
 }
 
 .content-fixed {
@@ -103,6 +106,16 @@ body {
 	font-size: 1.25em;
 }
 
+/* Common Content Style */
+.top-section {
+    width: 100%;
+    height: 11vh;
+}
+.title-comment {
+    width: 100%;
+    height: 20vh;
+    font-size: 1.2em;
+}
 
 @media screen and (max-width: 992px) {
 
