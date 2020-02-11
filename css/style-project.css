@@ -31,6 +31,19 @@
 	transition-timing-function: cubic-bezier(0.7,0,0.3,1);
 }
 
+.menu-project .menu-selected::before {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 40%;
+	background: var(--menu-item-color);
+	transform: scale3d(1,1,1);
+	transform-origin: 50% 0%;
+}
+
 .menu-project .menu_item:hover .menu_item-name::before,
 .menu-project .menu_item:focus .menu_item-name::before {
 	transform: scale3d(1,1,1);
@@ -44,7 +57,9 @@
 }
 .pv-item_now {
     width: 70%;
-    height: 100%;
+	height: 100%;
+	cursor: pointer;
+	z-index: 100;
 }
 .pv-item_prev {
     width: 30%;
@@ -57,7 +72,7 @@
 	padding: 0px;
     width: 90%;
     height: 100%;
-    margin-left: 10%;
+	margin-left: 10%;
 }
 .prev_image {
     position: relative;
@@ -73,10 +88,77 @@
 	width: 100%;
 	height: 100%;
 	position: absolute;
+	cursor: pointer;
 }
 .item > img {
     list-style: none;
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+}
+.item-blinder {
+	list-style: none;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-color: #0000008c;
+	z-index: 100;
+	cursor: pointer;
+}
+.item-header {
+    list-style: none;
+	position: absolute;
+	bottom: 20%;
+	left: 3em;
+	z-index: 100;
+}
+/* text color schema */
+.item-color-white {
+	--item-text-color: #ffffff; 
+}
+.item-color-gray {
+	--item-text-color: #adadad; 
+}
+.item-title-top {
+	position: absolute;
+	top: -12vh;
+	left:5px;
+	display: inline-block;
+	font-size: 4em;
+	font-weight: 700;
+	white-space: nowrap;
+  	background: linear-gradient(var(--item-text-color) 50%, #ffffff00 50%);
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+    background-clip: text;
+  	-webkit-text-fill-color: transparent;
+}
+.item-title-bottom {
+	position: absolute;
+	top: -12vh;
+	left: -5px;
+	display: inline-block;
+	font-size: 4em;
+	font-weight: 700;
+	white-space: nowrap;
+  	background: linear-gradient(#ffffff00 50%, var(--item-text-color) 50%);
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+    background-clip: text;
+  	-webkit-text-fill-color: transparent;
+}
+/* .item-title::before {
+	position: absolute;
+	top: 0;
+	left: -10px;
+	content: attr(data-split);
+	background: linear-gradient(#ffffff00 50%, var(--item-text-color) 50%);
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+    background-clip: text;
+  	-webkit-text-fill-color: transparent;
+} */
+.item-btn {
+	font-size: 0.8em;
+	color: #d42c2c;
 }
