@@ -8,11 +8,11 @@ var data  = [];
 data[0] = {
     title: "Mango CRM",
     color: "item-color-white",
-    src: "https://github.com/Roar-Song"
+    src: "https://github.com/Roar-Song/MangoCRM"
 }
 data[1] = {
     title: "Simple Blog",
-    color: "item-color-gray",
+    color: "item-color-red",
     src: "https://github.com/Roar-Song/Blog-Example"
 }
 data[2] = {
@@ -109,8 +109,8 @@ function carousel_next(n) {
 function dataSet(n) {
     $('.item-title-top').html(data[n].title);
     $('.item-title-bottom').html(data[n].title);
-    $('.item-title-top').removeClass('item-color-white item-color-gray');
-    $('.item-title-bottom').removeClass('item-color-white item-color-gray');
+    $('.item-title-top').removeClass('item-color-white item-color-red');
+    $('.item-title-bottom').removeClass('item-color-white item-color-red');
     $('.item-title-top').addClass(data[n].color);
     $('.item-title-bottom').addClass(data[n].color);
     $('.pv-item_now').attr('href', data[n].src);
