@@ -15,6 +15,11 @@ data[1] = {
     color: "item-color-gray",
     src: "https://github.com/Roar-Song/Blog-Example"
 }
+data[2] = {
+    title: "Mini TowerDefense",
+    color: "item-color-white",
+    src: "https://github.com/Roar-Song/MiniTowerDefense/blob/master/README.md"
+}
 
 $(document).ready(function() {
    carouselInit("now_image", 0);

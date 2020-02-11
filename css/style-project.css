@@ -117,7 +117,7 @@
 	--item-text-color: #ffffff; 
 }
 .item-color-gray {
-	--item-text-color: #adadad; 
+	--item-text-color: #ff1010; 
 }
 .item-title-top {
 	position: absolute;
@@ -160,5 +160,5 @@
 } */
 .item-btn {
 	font-size: 0.8em;
-	color: #d42c2c;
+	color: #ff1010;
 }
