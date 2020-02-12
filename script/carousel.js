@@ -7,7 +7,7 @@ var scrollEvent = [false, false];    // 스크롤이벤트 실행 제어
 var data  = [];
 data[0] = {
     title: "Mango CRM",
-    color: "item-color-white",
+    color: "item-color-red",
     src: "https://github.com/Roar-Song/MangoCRM"
 }
 data[1] = {
