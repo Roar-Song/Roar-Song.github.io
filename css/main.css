@@ -24,7 +24,6 @@ body {
     background-color: var(--color-background);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    overflow:hidden;
 }
 
 /* Color schemes */
@@ -33,6 +32,18 @@ body {
 	--color-background: #121212;
 	--color-link: #515152;
 	--color-link-hover: #ffffff;
+	overflow:hidden;
+}
+.body-about {
+    --color-text: #ffffff;
+	--color-background: #121212;
+	--color-link: #515152;
+	--color-link-hover: #ffffff;
+	-ms-overflow-style: none; 
+    scrollbar-width: none; 
+}
+.body-about::-webkit-scrollbar {
+    display: none;
 }
 
 .content {
@@ -63,7 +74,7 @@ body {
 	grid-template-areas: 
 	'header menu'
 	'... ...'
-	'... ...';
+	'scroller ...';
 }
 
 /* Header */
@@ -84,7 +95,16 @@ body {
 	font-weight: bold;
 	margin: 0;
     padding: 0.75em 0;
-    cursor: pointer;
+	cursor: pointer;
+}
+
+.scroll_btn {
+	display:inline-block;
+	grid-area: scroller;
+	cursor: pointer;
+	color: #7A7A7A;
+	margin-left: 20px;
+	width: 120px;
 }
 
 /* Common styles for the menus */
