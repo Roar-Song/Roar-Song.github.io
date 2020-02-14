@@ -45,6 +45,9 @@ body {
 .body-about::-webkit-scrollbar {
     display: none;
 }
+.body-about_white {
+    --color-text: #121212 !important;
+}
 
 .content {
 	position: relative;
@@ -52,10 +55,10 @@ body {
 	justify-content: flex-start;
 	align-items: flex-start;
 	min-height: 100vh;
-	margin: 0 10%;
+	margin: 0 5%;
     padding: 2em 3em;
-    -webkit-flex-direction:column;
-    flex-direction:column;
+    -webkit-flex-direction: column;
+    flex-direction: column;
 }
 
 .content-fixed {
@@ -64,17 +67,16 @@ body {
 	top: 0;
 	left: 0;
 	display: grid;
-	align-content: space-between;
-	width: 100%;
+    align-content: space-between;
+    width: 90%;
 	max-width: none;
 	height: 100vh;
-	padding: 2em 3em;
-	grid-template-columns: 40% 40%;
-	grid-template-rows: auto auto 4em;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: auto auto 3em;
 	grid-template-areas: 
 	'header menu'
 	'... ...'
-	'scroller ...';
+	'... ...';
 }
 
 /* Header */
@@ -96,15 +98,6 @@ body {
 	margin: 0;
     padding: 0.75em 0;
 	cursor: pointer;
-}
-
-.scroll_btn {
-	display:inline-block;
-	grid-area: scroller;
-	cursor: pointer;
-	color: #7A7A7A;
-	margin-left: 20px;
-	width: 120px;
 }
 
 /* Common styles for the menus */

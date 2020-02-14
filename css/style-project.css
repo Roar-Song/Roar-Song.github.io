@@ -147,17 +147,6 @@
     background-clip: text;
   	-webkit-text-fill-color: transparent;
 }
-/* .item-title::before {
-	position: absolute;
-	top: 0;
-	left: -10px;
-	content: attr(data-split);
-	background: linear-gradient(#ffffff00 50%, var(--item-text-color) 50%);
-	-webkit-background-clip: text;
-	-moz-background-clip: text;
-    background-clip: text;
-  	-webkit-text-fill-color: transparent;
-} */
 .item-btn {
 	font-size: 0.8em;
 	color: #ff1010;
