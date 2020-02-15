@@ -102,3 +102,15 @@
 	margin-right: 10px;
 	vertical-align: middle;
 }
+
+.profile-tr {
+	color: #121212;
+}
+.profile-header {
+	vertical-align: top;
+	text-indent: 20px;
+	font-size: 1.25em;
+}
+.profile-content {
+	vertical-align: top;
+}
